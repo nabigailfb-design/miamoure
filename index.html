@@ -3,42 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>💜 Pregunta importante</title>
+  <title>San Valentín</title>
+
+  <!-- Fuente Birds of Paradise -->
+  <link href="https://fonts.cdnfonts.com/css/birds-of-paradise" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Birds of Paradise -->
-  <link href="https://fonts.cdnfonts.com/css/birds-of-paradise" rel="stylesheet">
 </head>
-
 <body>
 
-  <div class="card" id="card">
+  <div class="book">
 
-    <!-- Pantalla 1 -->
-    <div id="screen1">
-      <p class="text">
-        Hola mi corazón, estoy muy feliz de estar contigo y quiero pasar una fecha especial contigo...
-      </p>
+    <!-- PAGINA 1 -->
+    <section class="page active" id="page1">
+      <div class="card">
+        <p class="text">
+          Hola mi corazón, estoy muy feliz de estar contigo y me gustaría pasar una fecha especial juntos...
+        </p>
 
-      <button class="btn" onclick="goToQuestion()">
-        Siguiente 💜
-      </button>
-    </div>
-
-    <!-- Pantalla 2 -->
-    <div id="screen2" style="display:none;">
-
-      <!-- IMAGEN -->
-      <img class="valentine-img" src="gatitos.png" alt="gatitos">
-
-      <h1 class="question">¿Quieres ser mi San Valentín?</h1>
-
-      <div class="buttons">
-        <button class="btn yes" id="yesBtn" onclick="yesClick()">Sí 💘</button>
-        <button class="btn no" id="noBtn">No 😔</button>
+        <button class="btn" onclick="goToPage(2)">Siguiente</button>
       </div>
-    </div>
+    </section>
+
+    <!-- PAGINA 2 -->
+    <section class="page" id="page2">
+      <div class="card">
+
+        <!-- IMAGEN (sube tu imagen al Replit con el nombre gatos.png) -->
+        <img class="valentine-img" src="gatos.png" alt="gatitos">
+
+        <h1 class="question">¿Quieres ser mi San Valentín?</h1>
+
+        <div class="buttons">
+          <button class="btn yes" id="yesBtn" onclick="yesAnswer()">Sí</button>
+          <button class="btn no" id="noBtn" onclick="noAnswer()">No</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PAGINA 3 -->
+    <section class="page" id="page3">
+      <div class="card">
+        <h2 class="final">Te quiero mucho Isaac</h2>
+      </div>
+    </section>
 
   </div>
 
