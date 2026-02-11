@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pregunta importante</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.cdnfonts.com/css/birds-of-paradise" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="card" id="card">
+
+    <div id="screen1">
+      <p class="text">
+        Hola mi corazón, estoy muy feliz de estar contigo y me gustaría pasar una fecha especial juntos...
+      </p>
+
+      <button class="btn" onclick="goToQuestion()">
+        Siguiente 
+      </button>
+    </div>
+
+    <div id="screen2" style="display:none;">
+      <h1 class="question">¿Quieres ser mi San Valentín?</h1>
+
+      <div class="buttons">
+        <button class="btn yes" id="yesBtn" onclick="yesClick()">Sí</button>
+        <button class="btn no" id="noBtn">No</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
